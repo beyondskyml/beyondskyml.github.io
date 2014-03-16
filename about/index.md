@@ -5,13 +5,9 @@ comments: no
 
 ---
 
-攻城狮一头，目前从事Linux的相关运维。     
-
-热爱Linux，开源爱好者，喜欢虚拟化，github等。            
-
-电脑洁癖与性能癖。       
-
-偶尔微博，偶尔wow。  
+酷毙学生党...  
+重度选择恐惧症/拖延症...  
+喜欢折腾...  
 
 ---
 
@@ -24,7 +20,7 @@ comments: no
 
 邮箱：[{{ site.email }}](mailto:{{ site.email }})
 
-GitHub : [http://github.com/{{ site.github }}](http://github.com/{{ site.github }})
+GitHub : [http://github.com/beyondskyml](http://github.com/beyondskyml)
 
 ----
 
