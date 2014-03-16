@@ -5,6 +5,15 @@ layout: default
 <span class="time">
   <time datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date:"%Y-%m-%d" }}</time>
 </span>
+{% if page.author.size != 0 %}
+ | 
+  <span class="author">
+    author
+    {% for aut in page.author %}
+    {{ aut }}&nbsp;
+    {% endfor %}
+  </span>
+{% endif %}
 {% if page.categories.size != 0 %}
  | 
 <span class="categories">
