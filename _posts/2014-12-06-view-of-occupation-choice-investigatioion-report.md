@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "inview of occupation choice investigatioion report"
+title: "view of occupation choice investigatioion report"
 author: beyondsky
 data: 2014-12-06 23:00:00
 categories:
