@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "view of occupation choice investigatioion report"
+title: "大学生择业观调查报告"
 author: beyondsky
 data: 2014-12-06 23:00:00
 categories:
