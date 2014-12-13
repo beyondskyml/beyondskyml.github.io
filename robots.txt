@@ -1,4 +1,4 @@
-User-Agent: Baiduspider
+User-Agent: *
 Disallow: /assets/
 Disallow: /media/
 Sitemap: http://www.beyondsky.tk/sitemap.xml
