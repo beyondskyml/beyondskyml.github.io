@@ -61,8 +61,7 @@ tags:
     如果改变了这个值，你需要重启设备：
     
         sudo reboot
-         或：
-    
+         或：    
         sudo shutdown -r now
 
 ##运行
@@ -85,6 +84,8 @@ tags:
  - 12.2-1: Frodo 12.2 release.
  - 12.1-1: Frodo 12.1 release. Requires newer libcec (also in my archive).
  - 12.0-1: Frodo 12.0 release. ~This build requires newer firmware than the raspberrypi.org archive or image contains. Either install the packages from the raspberrypi.org untested archive, the twolife archive or use rpi-update.~ (Not necessary as of 2013/02/11.)
+
+-----------
 
 ##使用预生成镜像烧写一张SD卡
 我已经构建了一个镜像，它包括了一个装有 XBMC 软件包的 Raspbian 系统，你可以直接下载并烧写到一张 SD 卡上。你需要一张 1GB 容量的 SD 卡*（当然更大也是可以的）*（这张卡将被完全擦除）。
