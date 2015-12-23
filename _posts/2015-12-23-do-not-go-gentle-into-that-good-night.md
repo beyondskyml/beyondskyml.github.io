@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "do not go gentle into that good night"
+title: "Do not go gentle into that good night"
 author: Dylan Thomes
 data: 2015-12-23 19:12:45
 categories:
@@ -34,3 +34,5 @@ And you, my father, there on the sad height,
 Curse, bless, me now with your fierce tears, I pray.  
 Do not go gentle into that good night.  
 Rage, rage against the dying of the light.  
+
+> Dylan Marlais Thomas, born October 27, 1914, in South Wales, was the archetypal Romantic poet of the popular American imagination—he was flamboyantly theatrical, a heavy drinker, engaged in roaring disputes in public, and read his work aloud with tremendous depth of feeling and a singing Welsh lilt.
