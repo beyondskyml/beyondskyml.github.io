@@ -1,4 +1,5 @@
 ---
+published: false
 author: jiyeqian
 layout: post
 title: "git速查手册"

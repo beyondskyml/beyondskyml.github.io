@@ -1,4 +1,5 @@
 ---
+published: false
 author: pandao
 comments: false
 date: 2011-09-28 04:27:25+00:00
@@ -26,6 +27,8 @@ tags: [linux, iso]
 	mkisofs	-a -l -J -L -r -o filename.iso /directory
 
 ###mkisofs (make iso filesystem)
+
+```
 　　功能说明：建立ISO 9660映像文件。
 	　　语　　法：mkisofs [-adDfhJlLNrRTvz][-print-size][-quiet][-A][-abstract ][-b ][-biblio ][-c][-C ][-copyright ][-hide][-hide-joliet ][-log-file ][-m][-M ][-o ][-p][-P ][-sysid ][-V ][-volset ][-volset-size ][-volset-seqno][-x ][目录或文件]
 	　　补充说明：mkisofs可将指定的目录与文件做成ISO 9660格式的映像文件，以供刻录光盘。
@@ -61,4 +64,4 @@ tags: [linux, iso]
 	　　-T或-translation-table 建立文件名的转换表，适用于不支持Rock Ridge Extensions的系统上。
 	　　-v或-verbose 执行时显示详细的信息。
 	　　-V
-
+```

@@ -1,10 +1,8 @@
 ---
-published: false
 author: pandao
 comments: false
-date: 2011-07-18 05:21:40+00:00
 layout: post
-slug: oracle-databases-commonly-commands
+slug: a-post-will-be-published
 title: oracle数据库时常用的操作命令
 thread: 54
 categories: database

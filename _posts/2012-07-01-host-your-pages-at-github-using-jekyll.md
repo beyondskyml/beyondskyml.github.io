@@ -1,9 +1,9 @@
 ---
+published: false
 layout: post
 title: "基于jekyll的github建站指南"
 author: jiyeqian
 category: 杂七杂八
-published: true
 tags: [github, git, jekyll, 速查, 简介, 程序]
 ---
 
