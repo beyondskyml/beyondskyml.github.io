@@ -9,22 +9,21 @@ $(function() {
         var title = $(this).text();
         var id = 'outline_' + idx;
         dict[title] = id;
-
-/*        $(this).append('<a name="' + id + '"></a>'); */
-$(this).html('<a name="' + id + '"></a>'+$(this).html());
+        /* $(this).append('<a name="' + id + '"></a>'); */
+        $(this).html('<a name="' + id + '"></a>'+$(this).html());
     });
 
     var outline_ul = $('<ul style="list-style-type: none"></ul>');
     $.each(dict, function (idx, val) {
         outline_ul.append($('<li></li>')
-                             .html('<span><a href="#' + val + '">' + idx + '</a></span>'));
+                  .html('<span><a href="#' + val + '">' + idx + '</a></span>'));
     });
     $('#main').append($('<nav id="h2outline"></nav>')
-                         .css('position', 'fixed')
-                         .css('top', $('#real_nav').position().top - 1)
-                         .css('width', '155px')
-                         .css('text-align', 'left')
-                         .html(outline_ul));
+              .css('position', 'fixed')
+              .css('top', $('#real_nav').position().top - 1)
+              .css('width', '155px')
+              .css('text-align', 'left')
+              .html(outline_ul));
 
     /**
      * |<------------------------------w------------------------------>|
@@ -47,7 +46,7 @@ $(this).html('<a name="' + id + '"></a>'+$(this).html());
      *     l = $('#real_nav').position().left,
      *     n = $('#real_nav').width()
      */
-    var main = $('#main'),
+    var main      = $('#main'),
         h2outline = $('#h2outline'),
         real_nav  = $('#real_nav');
 
@@ -60,12 +59,9 @@ $(this).html('<a name="' + id + '"></a>'+$(this).html());
         var w = $(window).width(),
             c = main.width(),
             a = h2outline.width();
-        h2outline.css('right',
-                      (w - c) / 2 - (a + d));
+        h2outline.css('right', (w - c) / 2 - (a + d));
     });
 
     $(window).resize();
 
 });
-
-
