@@ -1,36 +1,15 @@
 <!DOCTYPE html>
 <html>
-
 {% include shim.html %}
 
 <body onLoad="setInterval(setTimeSpan,1000)">
-
-    <div id="container">
-        <div id="main" role="main">
-
-            {% include header.html %}
-            {% include nav.html %}
-
-            <article class="content">
-                {{ content }}
-            </article>
-
-        </div>
-
-        {% include footer.html %}
-
-    </div>
-
-    <!-- 
-    <script>
-        var _hmt = _hmt || [];
-        (function() {
-          var hm = document.createelement("script");
-          hm.src = "//hm.baidu.com/hm.js?e29f61e8b7b82b47128e8cc087970686";
-          var s = document.getelementsbytagname("script")[0]; 
-          s.parentnode.insertbefore(hm, s);
-        })();
-    </script>
-    -->
+	<div class="container">
+		<div id="main" role="main">
+			{% include nav.html %}
+			{% include header.html %}
+			{{ content }}
+		</div>
+		{% include footer.html %}
+	</div>
 </body>
 </html>
