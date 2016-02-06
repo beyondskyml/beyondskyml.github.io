@@ -17,12 +17,12 @@
 </a>
 
 <script type="text/javascript">
-function setTimeSpan() {
+function setTimeSpan() {                             // 更新时间显示
 	var date = new Date();
 	$("#timeSpan").text(date.format('yyyy-MM-dd hh:mm:ss'));
 }
 
-Date.prototype.format = function(format) {
+Date.prototype.format = function(format) {           // 获取当前时间
 	var o = {
 		"M+": this.getMonth() + 1,                   //month
 		"d+": this.getDate(),                        //day

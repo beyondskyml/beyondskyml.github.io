@@ -1,54 +1,41 @@
 <header>
-	<h1 class="visible-md-block visible-lg-block">{{ page.title }}</h1>
-	<div id="topnav" class="navbar navbar-default visible-xs-block visible-sm-block">
-		<!-- Brand and toggle get grouped for better mobile display -->
-		<div class="navbar-header row">
-			<div class="col-xs-10 col-sm-11">
-			<a class="navbar-brand" id="navtitle" href="/">{{ page.title }} </a>
-			</div>
-			<div class="col-xs-2 col-sm-1">
-			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-navbar-link" aria-expanded="false">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-			</div>
-		</div>
-		<!-- Collect the nav links, forms, and other content for toggling -->
-		<div class="collapse navbar-collapse" id="top-navbar-link">
-<!-- 			<ul class="nav navbar-nav">
-				<li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-				<li><a href="#">Link</a></li>
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-					<ul class="dropdown-menu">
-						<li><a href="#">Action</a></li>
-						<li><a href="#">Another action</a></li>
-						<li><a href="#">Something else here</a></li>
-						<li role="separator" class="divider"></li>
-						<li><a href="#">Separated link</a></li>
-						<li role="separator" class="divider"></li>
-						<li><a href="#">One more separated link</a></li>
-					</ul>
-				</li>
-			</ul> -->
-			<ul class="nav navbar-nav navbar-right ">
-				<li><a href="/">Home</a></li>
-				<li><a href="/about/">About</a></li>
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More「<span class="caret"></span>」</a>
-					<ul class="dropdown-menu">
-						<li><a href="/categories/">Categories</a></li>
-						<li><a href="/tags/">Tags</a></li>
-						<li><a href="/logs/">Logs</a></li>
-						<li role="separator" class="divider"></li>
-						<li><a href="/guestbook/">GuestBook</a></li>
-						<li><a href="/feed/">Subscribe</a></li>
-					</ul>
-				</li>
-			</ul>
-		</div>
-	</div>
-	<!-- /.navbar-collapse -->
+	<!-- md / lg 设备上显示的标题栏 -->
+    <h1 class="visible-md-block visible-lg-block">{{ page.title }}</h1>
+
+    <!-- xs / sm 设备上显示的顶部导航栏 -->
+    <div id="topnav" class="navbar navbar-default visible-xs-block visible-sm-block">
+        <div class="navbar-header row">
+            <div class="col-xs-10 col-sm-11">
+            	<!-- 顶部导航栏标题 -->
+                <a class="navbar-brand" id="navtitle" href="/">{{ page.title }} </a>
+            </div>
+            <div class="col-xs-2 col-sm-1">
+		    	<!-- 用于移动设备(xs)的顶部导航栏 -->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-navbar-link" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+        </div>
+        <!-- 顶部导航栏连接 -->
+        <div class="collapse navbar-collapse" id="top-navbar-link">
+            <ul class="nav navbar-nav navbar-right ">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about/">About</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More「<span class="caret"></span>」</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/categories/">Categories</a></li>
+                        <li><a href="/tags/">Tags</a></li>
+                        <li><a href="/logs/">Logs</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="/guestbook/">GuestBook</a></li>
+                        <li><a href="/feed/">Subscribe</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
 </header>

@@ -1,7 +1,8 @@
 ---
+published: false
 layout: post
 title: "year-end summary"
-author: 
+author: besky
 data: 2015-12-28 22:02:58
 categories:
 - 随笔
