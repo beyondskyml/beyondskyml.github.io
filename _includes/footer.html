@@ -12,8 +12,8 @@
 	</small></p>
 
 </footer>
-<a style="position:fixed;bottom:5px;right:5px;" href="#" title="Back to Top">
-	<img src="/assets/btt.png" />
+<a href="#topAnchor" class="go-top">
+	<span class="glyphicon glyphicon glyphicon-triangle-top" aria-hidden="true"></span>
 </a>
 
 <script type="text/javascript">
@@ -44,3 +44,19 @@ Date.prototype.format = function(format) {           // 获取当前时间
 }
 </script>
 
+<script>
+$(window).scroll(function(event) {
+    var scroll = $(window).scrollTop();
+    if (scroll >= 200) {
+        $(".go-top").addClass("show");
+    } else {
+        $(".go-top").removeClass("show");
+    }
+});
+
+$('a').click(function() {
+    $('html, body').animate({
+        scrollTop: $($(this).attr('href')).offset().top
+    }, 1000);
+});
+</script>
