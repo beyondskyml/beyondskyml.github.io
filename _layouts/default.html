@@ -1,15 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 {% include shim.html %}
 
 <body onLoad="setInterval(setTimeSpan,1000)">
 	<div class="container">
-		<div id="main" role="main">
-			{% include nav.html %}
-			{% include header.html %}
-			{{ content }}
+		<div class="row" id="main" role="main">
+			<div class="col-md-2 col-lg-2 visible-md-block visible-lg-block">
+				{% include nav.html %}
+			</div>
+			<div class="col-md-8 col-lg-8">
+				{% include header.html %}
+				{{ content }}
+			</div>
+			<div class="col-md-2 col-lg-2 visible-md-block visible-lg-block" id="rightbox"></div>
 		</div>
-		{% include footer.html %}
+		<div class="row">
+			{% include footer.html %}
+		</div>
 	</div>
 </body>
 </html>
