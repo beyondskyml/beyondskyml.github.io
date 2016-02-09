@@ -36,20 +36,24 @@ By the way, 如果安装软件时经常遇到依赖错误，并且更换过 linu
 
 这里在 linux 命令行中跟换淘宝提供的源:  
 	
-	$ gem sources --remove https://rubygems.org/
-	$ gem sources -a https://ruby.taobao.org/
-	$ gem sources -l
-	*** CURRENT SOURCES ***
+{% highlight shell %}
+$ gem sources --remove https://rubygems.org/
+$ gem sources -a https://ruby.taobao.org/
+$ gem sources -l
+*** CURRENT SOURCES ***
 	
-	https://ruby.taobao.org
-	# 请确保只有 ruby.taobao.org
-	$ gem install rails
+https://ruby.taobao.org
+# 请确保只有 ruby.taobao.org
+$ gem install rails
+{% endhighlight %}
 
 如果你是用 Bundle (Rails 项目)
 	
-	source 'https://ruby.taobao.org/'
-	gem 'rails', '4.1.0'
-	...
+{% highlight shell %}
+source 'https://ruby.taobao.org/'
+gem 'rails', '4.1.0'
+...
+{% endhighlight %}
 
 *注: 这个操作我没有成功，采用下述方法修改成功（原因不深究了，比较懒，能用就好，不是吗 ^_< ）。*
 
@@ -57,17 +61,21 @@ By the way, 如果安装软件时经常遇到依赖错误，并且更换过 linu
 
  找到 applocation generator 中的 Gemfile模板的位置:
 
-	cd "$(gem environ | gawk '/INSTALLATION DIR/{print $4}')"
-	cd ./gems/railties-*/lib/rails/generators/rails/app/templates
-	vim ./Gemfile
+{% highlight shell %}
+cd "$(gem environ | gawk '/INSTALLATION DIR/{print $4}')"
+cd ./gems/railties-*/lib/rails/generators/rails/app/templates
+vim ./Gemfile
+{% endhighlight %}
 
  分别把 Gemfile 的 source 改为 'http://ruby.taobao.org' :
 
  这里参考如下三个 Gemfile 的目录，最好找到另外两个 Gemfile 目录，并将 source 进行修改:
 
-	 ~/.rvm/gems/ruby-2.0.0-p247/gems/bundler-1.3.5/lib/bundler/templates/Gemfile
-	 ~/.rvm/gems/ruby-2.0.0-p247/gems/railties-4.0.1/lib/rails/generators/rails/app/templates/Gemfile
-	 ~/.rvm/gems/ruby-2.0.0-p247/gems/railties-4.0.1/lib/rails/generators/rails/plugin_new/templates/Gemfile
+{% highlight shell %}
+~/.rvm/gems/ruby-2.0.0-p247/gems/bundler-1.3.5/lib/bundler/templates/Gemfile
+~/.rvm/gems/ruby-2.0.0-p247/gems/railties-4.0.1/lib/rails/generators/rails/app/templates/Gemfile
+~/.rvm/gems/ruby-2.0.0-p247/gems/railties-4.0.1/lib/rails/generators/rails/plugin_new/templates/Gemfile
+{% endhighlight %}
 
 我使用的是 rails 是 4.1.2 版本，没有找到上述第一个目录，第二个和第三个目录中的 Gemfile 都修改后，执行 'bundle install' 正常。
 

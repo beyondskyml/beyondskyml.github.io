@@ -3,25 +3,19 @@
     <h1 class="visible-md-block visible-lg-block">{{ page.title }}</h1>
 
     <!-- xs / sm 设备上显示的顶部导航栏 -->
-    <div id="topnav" class="navbar navbar-default visible-xs-block visible-sm-block">
-        <div class="navbar-header row">
-            <div class="col-xs-10 col-sm-11">
-            	<!-- 顶部导航栏标题 -->
-                <a class="navbar-brand" id="navtitle" href="/">{{ page.title }} </a>
-            </div>
-            <div class="col-xs-2 col-sm-1">
-		    	<!-- 用于移动设备(xs)的顶部导航栏 -->
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-navbar-link" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
+    <div id="topnav" class="visible-xs-block visible-sm-block">
+        <!-- 用于移动设备(xs)的顶部导航栏 -->
+        <div class="navbar-header">
+        	<!-- 顶部导航栏标题 -->
+            <a class="navbar-brand" id="navtitle" href="/">{{ page.title }}</a>
+
+            <button type="button" class="navbar-toggle collapsed btn-lg" data-toggle="collapse" data-target="#top-navbar-link" aria-expanded="false">
+                <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+            </button>
         </div>
         <!-- 顶部导航栏连接 -->
         <div class="collapse navbar-collapse" id="top-navbar-link">
-            <ul class="nav navbar-nav navbar-right ">
+            <ul class="nav navbar-nav navbar-right">
                 <li><a href="/">Home</a></li>
                 <li><a href="/about/">About</a></li>
                 <li class="dropdown">
