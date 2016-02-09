@@ -1,5 +1,5 @@
 ---
-author: Beyond Sky
+author: besky
 comments: false
 date: 2011-11-19 15:45:41
 layout: page

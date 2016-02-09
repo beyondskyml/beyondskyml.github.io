@@ -158,7 +158,38 @@ footer a:hover{border-bottom:1px dashed #BBB;text-decoration:none;}
 .label-warning{background-color:#f89406;}
 .label-success{background-color:#468847;}
 .label-info{background-color:#3a87ad;}
-.paginator{font:14px Arial,Helvetica,sans-serif;color:#AAA;margin:20px 0;line-height:150%;display:block;}
-.paginator a,.paginator span{padding:0 4px;margin:2px;text-decoration:none;}
-.paginator .current-page{color:white;background:#ff0000;}
-.paginator a:hover{color:white;background:#83BF73;}
+.paginator {
+    font: 14px Arial, Helvetica, sans-serif;
+    color: #AAA;
+    margin: 20px 0;
+    line-height: 150%;
+    display: block;
+}
+.paginator a,
+.paginator span {
+    /*padding: 0 4px;*/
+    padding: .5em 1em;
+    margin: 2px;
+    text-decoration: none;
+}
+.paginator .current-page {
+    /*color: white;*/
+    /*background: #ff0000;*/
+    color: black;
+    background: #e7e7e7;
+}
+.paginator .current-page:hover {
+    color: red;
+    -webkit-transition: color .2s linear;
+    -o-transition: color .2s linear;
+    transition: color .2s linear;
+}
+.paginator a:hover {
+    color: white;
+    /*background: #83BF73;*/
+    /*color: black;*/
+    background: red;
+    -webkit-transition: color .2s linear;
+    -o-transition: color .2s linear;
+    transition: color .2s linear;
+}
