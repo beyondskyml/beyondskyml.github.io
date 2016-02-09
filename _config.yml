@@ -1,5 +1,5 @@
 markdown: kramdown
-# permalink: /:year/:i_month/:title
+permalink: /:year/:i_month/:title
 hightlighter: pygments
 duoshuo: beyondsky
 url: http://besky.me
@@ -11,13 +11,13 @@ weibo: 2174510607
 weibourl: beskyme
 about: "学生党，重度选择恐惧症/拖延症，，，喜欢折腾。。。"
 github: beyondskyml
-safe: true
 
 gems: 
  - jekyll-paginate
 
 paginate: 16 # 每页显示的文章列表长度
+paginate_path: "page:num"
+# safe: true    # 如果使用该选项，则不会加载任何 include 的插件，比如 pagination
 # disqus: beyondsky
-# paginate_path: "/blog/page:num"
 # beian: 浙ICP备12026616号
 # cnzz: 119959
