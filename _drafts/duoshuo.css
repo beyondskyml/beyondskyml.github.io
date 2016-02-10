@@ -1,0 +1,238 @@
+/* 去除链接点击后的虚线框 */
+a:focus {
+    outline:none;
+    -moz-outline:none;
+}
+#ds-thread #ds-reset a:hover,
+#ds-thread #ds-reset .ds-powered-by a:hover,
+#ds-thread #ds-reset .ds-comment-body a:hover,
+#ds-thread #ds-reset .ds-account-control.ds-active span:hover{
+    color: #23527c;
+}
+
+
+/* 默认阴影为白色，不显示 */
+#ds-reset .ds-avatar img {
+    -webkit-border-radius: 0;
+    border-radius: 0;
+
+    -webkit-box-shadow: white 1px 1px 4px;
+    -moz-box-shadow: white 1px 1px 4px;
+    box-shadow: white 1px 1px 4px;
+}
+
+/* 鼠标划过时头像阴影 */
+#ds-reset .ds-avatar img:hover {
+    -webkit-transition: box-shadow .2s linear;
+    -o-transition: box-shadow .2s linear;
+    transition: box-shadow .2s linear;
+
+    -webkit-box-shadow: #999 1px 1px 4px;
+    -moz-box-shadow: #999 1px 1px 4px;
+    box-shadow: #999 1px 1px 4px;
+}
+
+/* 评论框位置 */
+#ds-thread #ds-reset .ds-replybox {
+    margin-top: 0;
+}
+
+/* 评论框背景颜色 */
+#ds-thread #ds-reset .ds-textarea-wrapper {
+    border: none;
+    background: #f8f8f8;
+}
+
+/* 评论框底部按钮栏背景 */
+#ds-reset .ds-gradient-bg {
+    background: #f8f8f8;
+}
+
+/* 评论框底部按钮栏边框 */
+#ds-thread #ds-reset .ds-post-options {
+    border: none;
+    border-top: 1px dashed #CCC;
+    border-bottom-color: #CCC;
+    -webkit-border-bottom-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+/* 发布按钮 */
+#ds-thread #ds-reset .ds-post-button {
+    font-weight: normal;
+    color: black;
+    background-image: none;
+    background-color: #f8f8f8;
+    border: none;
+    border-top: 1px dashed #CCC;
+
+    -webkit-border-bottom-right-radius: 0;
+    border-bottom-right-radius: 0;
+
+    -webkit-box-shadow: none;
+    box-shadow: none;
+
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+#ds-thread #ds-reset .ds-post-button:hover {
+    color: white;
+    background-color: red;
+    -webkit-transition: color .2s linear;
+    -o-transition: color .2s linear;
+    transition: color .2s linear;
+}
+
+/* 喜欢按钮 */
+#ds-thread #ds-reset a.ds-like-thread-button {
+    border: none;
+    background-color: white;
+    background-image: none;
+    box-shadow: none;
+    padding: .2em 1em;
+}
+#ds-thread #ds-reset a.ds-like-thread-button:hover {
+    background-color: red;
+    -webkit-transition: background-color .2s linear;
+    -o-transition: background-color .2s linear;
+    transition: background-color .2s linear;
+}
+#ds-reset .ds-rounded {
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+#ds-thread #ds-reset a.ds-thread-liked {
+    background-color: #e7e7e7;
+}
+#ds-thread #ds-reset a.ds-thread-liked:hover {
+    background-color: #CCC;
+    -webkit-transition: background-color .2s linear;
+    -o-transition: background-color .2s linear;
+    transition: background-color .2s linear;
+}
+#ds-thread #ds-reset a.ds-thread-liked:hover .ds-thread-cancel-like,
+#ds-thread #ds-reset a .ds-thread-like-text {
+    display: none;
+}
+#ds-thread #ds-reset a.ds-like-thread-button .ds-icon-heart,
+#ds-thread #ds-reset a.ds-like-thread-button .ds-icon-heart:hover {
+    margin-left: .5em;
+}
+
+/* 菜单样式 */
+#ds-thread #ds-reset .ds-like-tooltip,
+#ds-wrapper #ds-reset .ds-dialog-inner,
+#ds-thread #ds-reset .ds-account-control ul {
+    font-size: 1em;
+    border: none;
+    border-radius: 0;
+    background: none;
+    background-color: white;
+
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}
+/* 分享菜单 */
+#ds-thread #ds-reset p .ds-like-tooltip-close {
+    color: black;
+    padding: .3em 1em;
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+#ds-thread #ds-reset p .ds-like-tooltip-close:hover {
+    color: white;
+    background-color: red;
+    -webkit-transition: color .2s linear;
+    -o-transition: color .2s linear;
+    transition: color .2s linear;
+}
+
+/* 分割线样式 */
+#ds-thread #ds-reset .ds-meta {
+    border-bottom: none;
+}
+#ds-thread #ds-reset li.ds-post {
+    border-top: 1px solid #CCC;
+}
+#ds-thread #ds-reset .ds-comments {
+    border-bottom: 1px dashed #e7e7e7;
+}
+
+/* 喜欢栏位置 */
+#ds-thread #ds-reset .ds-meta {
+    margin-bottom: -3.8em;
+}
+/* 评论数量栏位置 */
+#ds-thread #ds-reset li.ds-tab {
+    float: right;
+    margin-right: 13em;
+}
+
+/* 评论数量样式 */
+#ds-thread #ds-reset li.ds-tab a.ds-current {
+    padding: .2em 1em;
+    color: black;
+    border: none;
+    background-color: #e7e7e7;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+#ds-reset .ds-highlight {
+    color: black;
+}
+#ds-thread #ds-reset li.ds-tab a.ds-current:hover,
+#ds-thread #ds-reset li.ds-tab a.ds-current:hover .ds-highlight {
+    color: white !important;
+    background-color: red;
+    -webkit-transition: color .2s linear;
+    -o-transition: color .2s linear;
+    transition: color .2s linear;
+}
+/* 评论排序按钮样式 */
+#ds-thread #ds-reset .ds-sort a.ds-current {
+    padding: .2em 1em;
+    color: black;
+    background-color: #e7e7e7;
+}
+#ds-thread #ds-reset .ds-sort a.ds-current:hover {
+    color: red;
+    background-color: #e7e7e7;
+    -webkit-transition: color .2s linear;
+    -o-transition: color .2s linear;
+    transition: color .2s linear;
+}
+#ds-thread #ds-reset .ds-sort a {
+    padding: .2em 1em;
+    color: black;
+}
+#ds-thread #ds-reset .ds-sort a:hover {
+    color: white;
+    background-color: red;
+    -webkit-transition: color .2s linear;
+    -o-transition: color .2s linear;
+    transition: color .2s linear;
+}
+
+/* 账号管理菜单 */
+#ds-thread #ds-reset .ds-account-control.ds-active span {
+    background-color: white;
+}
+
+/* 账号管理 菜单列表 */
+#ds-thread #ds-reset .ds-account-control ul li a {
+    color: black;
+}
+#ds-thread #ds-reset .ds-account-control ul li a:hover {
+    color: white;
+    background-color: red;
+    -webkit-transition: color .2s linear;
+    -o-transition: color .2s linear;
+    transition: color .2s linear;
+}
+
+/* 弹出式社交登陆框样式 */
+#ds-wrapper #ds-reset .ds-dialog-footer {
+    border-top: 1px dashed #CCC;
+}
