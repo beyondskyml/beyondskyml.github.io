@@ -5,41 +5,44 @@ comments: no
 
 ---
 
-酷毙学生党...  
-重度选择恐惧症/拖延症...  
-喜欢折腾...  
+coding / 宅 / 旅行 / 摄影 / 折腾...  
+重度选择恐惧症 / 拖延症...  
 
 ---
 
-###联系方式：
+## 联系方式
+
 
 {% if site.qq %}
 ＱＱ：[{{ site.qq }}](tencent://message/?uin={{ site.qq }})
 {% endif %}
-网站：[{{ site.name }}]({{ site.url }})
+网站：[{{ site.name }}]({{ site.url }})  
+邮箱：[{{ site.email }}](mailto:{{ site.email }})  
+GitHub：[{{ site.github }}](http://github.com/beyondskyml)  
 
-邮箱：[{{ site.email }}](mailto:{{ site.email }})
+---
 
-GitHub : [http://github.com/beyondskyml](http://github.com/beyondskyml)
+## 关于主题
 
-----
+本博客主题来自 [webfrog](https://github.com/webfrogs/webfrogs.github.com)  
+进行了大量细节上的定制，并且加入响应式布局支持（详见 LOGS）  
+非常感谢这个简洁漂亮的主题  
 
+---
 
-本博客clone自[webfrog](https://github.com/webfrogs/webfrogs.github.com)，在此非常感谢这个简洁漂亮的主题。
+### Tricky ~ :
 
-**添加功能**:
+- `Powered by Jekyll @ GitHub` 中 `Po` 为 post，`ed` 为 edit。 
 
-'Powered by Jekyll @ GitHub'中'Po'为post，'ed'为edit。 
+--- via [Yonsm](http://yonsm.net/)
 
----var [Yonsm](http://yonsm.net/)
+- post 自动生成大纲，浮在 post 页面右边。
 
-post右边自动生成post的大纲，浮在post页面左边。
+- vim 风格的按键，`j`为上一篇，`k`下一篇。  
 
-vim风格的按键，j为上一篇，k下一篇。  
+--- via [mad4a](http://mad4a.me/)
 
----via [mad4a](http://mad4a.me/)
-
-----
+---
 
 
 

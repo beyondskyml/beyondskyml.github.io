@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "vim plugin -- vim-youdao-translator"
-author: besky
+author: beyondsky
 data: 2015-12-25 19:03:22
 categories:
 - tool
