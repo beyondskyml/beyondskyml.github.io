@@ -115,10 +115,6 @@ a:focus {
 #ds-thread #ds-reset a .ds-thread-like-text {
     display: none;
 }
-#ds-thread #ds-reset a.ds-like-thread-button .ds-icon-heart,
-#ds-thread #ds-reset a.ds-like-thread-button .ds-icon-heart:hover {
-    margin-left: .5em;
-}
 
 /* 菜单样式 */
 #ds-thread #ds-reset .ds-like-tooltip,

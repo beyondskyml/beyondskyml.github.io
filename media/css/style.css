@@ -60,24 +60,55 @@ nav a:hover {
     margin-bottom: 0;
 }
 
-
-/* 导航栏布局修改 */
-#navtitle {
-    margin: 0;
-    padding: 0;
-    padding-top: 0.8em;
-    padding-bottom: 0.8em;
-    font-size: 1.2em;
-    color: #000;
+/* xs / sm 屏幕选择不同的标题栏行高 */
+@media screen and (max-width: 768px) {
+    #navtitle {
+        margin: 0;
+        padding: .4em 0;
+        height: auto;
+        font-size: 1.2em;
+        color: #000;
+    }
 }
+@media (min-width: 768px) and (max-width: 992px) {
+    #navtitle {
+        margin: 0;
+        padding: .8em 0;
+        height: auto;
+        font-size: 1.2em;
+        color: #000;
+    }
+}
+
 /* 顶部导航栏标题样式 */
 /* 导航栏样式修改 */
 .navbar-default{ 
 	background-color: white; 
 	border: none; 
 } 
+/* xs 布局 - 菜单箭头样式 */
+.navbar-toggle {
+    padding: .4em .7em;
+    margin: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+.navbar-toggle:hover {
+    color: white;
+    background-color: red;
+    -webkit-transition: color .2s linear;
+    -o-transition: color .2s linear;
+    transition: color .2s linear;
+}
+.navbar-toggle .glyphicon {
+    padding-top: 0.4em;
+}
+#topnav {
+    margin-bottom: -0.5em;
+}
 #topnav li {
 	background-color: white;
+    padding: 0;
 }
 #topnav li .divider {
 	background-color: #e5e5e5;
