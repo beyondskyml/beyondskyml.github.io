@@ -20,10 +20,10 @@ tags:
 
 这个页面介绍如何在运行 Raspbian 系统的树梅派上安装 XBMC。你既可以选择在已有设备上安装软件包，也可以下载一个预生成镜像文件来烧写到一张 SD 卡上。
 
-##在已有设备上安装
+## 在已有设备上安装
 我已经释出了一个归档文件（archive），里面包含有 Kodi/XBMC 的软件包和一些必要的依赖环境。你可以在已有的 Raspbian 系统设备（包括[基金会镜像(foundation image)][2]）上安装它。
 
-##安装
+## 安装
 
  1. 最简单的安装方法是在你的系统中添加我的归档文件。首先在 **/etc/apt/sources.list.d/mene.list**
     文件中添加并保存如下内容：
@@ -64,7 +64,7 @@ tags:
          或：    
         $ sudo shutdown -r now
 
-##运行
+## 运行
 要运行 XBMC，可以从一个虚拟终端（VT）（例如，不在 X 下*，X 是 linux 的图形系统*）上运行 **kodi-standalone**。XBMC 之间进行显示输出，而不是通过图形系统（Xorg）。
 
 如果你想让系统启动时自动运行 Kodi，编辑 **/etc/default/kodi** 文件，将 **ENABLED** 的值改为**1**：
@@ -77,7 +77,7 @@ tags:
 
 运行 `sudo service kodi start` 来进行测试。*如果该测试启动了 Kodi，说明配置正确。*
 
-##发布记录
+## 发布记录
  - 14.1-1: Helix 14.1 release
  - 14.0-1: Helix 14.0 release.
  - 13.1-2: Link to libshairplay for better AirPlay support.
@@ -89,10 +89,10 @@ tags:
 
 -----------
 
-##使用预生成镜像烧写一张SD卡
+## 使用预生成镜像烧写一张SD卡
 我已经构建了一个镜像，它包括了一个装有 XBMC 软件包的 Raspbian 系统，你可以直接下载并烧写到一张 SD 卡上。你需要一张 1GB 容量的 SD 卡*（当然更大也是可以的）*（这张卡将被完全擦除）。
 
-##烧写
+## 烧写
 
  1. 使用 **unx** 命令解压缩镜像：
     
@@ -103,16 +103,16 @@ tags:
     
     *注：这里 **sdb** 指的是你的 SD 卡设备，如果你不清楚上述命令究竟做了什么，建议先去查查资料，否则这个操作有可能把你的硬盘擦除！*
 
-##定制
+## 定制
 这个镜像使用与基金会镜像（foundation image）相同的凭证，用户名：`pi`，密码：`raspberry`。你可以使用 **raspi-config** 工具扩展根文件系统，开启超频以及其他各种配置工作。
 
-##更新
+## 更新
 Raspbian 和 Kodi 都可以使用普通的 Debian 机制来进行更新，比如 **apt-get** 命令：
 
     $ sudo apt-get update
     $ sudo apt-get dist-upgrade
 
-##发布记录
+## 发布记录
 
  - 20150208: torrent magnet Contains 14.1-1, and should work on
    Raspberry Pi 2.
@@ -128,12 +128,12 @@ Raspbian 和 Kodi 都可以使用普通的 Debian 机制来进行更新，比如
  - 20121029: torrent magnet
  - 20121021: torrent magnet
 
-##不稳定版
+## 不稳定版
 我已经为即将到来的一系列（Helix）发布开始构建软件包。它们在归档文件中的新的 **unstable** 区域。要安装这些软件包，按如下内容更新你的源列表（source list）：
 
     deb http://archive.mene.za.net/raspbian wheezy contrib unstable
 
-##发布记录
+## 发布记录
  - 14.0-1: Helix 14.0 release.
  - 14.0~git20141203.35b4f38-1: Helix 14.0 RC 2
  - 14.0~git20141130.ea20b83-1: Helix 14.0 RC 1
