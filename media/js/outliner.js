@@ -66,3 +66,8 @@ $(function() {
     // $(window).resize();
 
 });
+
+// 该函数为表格添加 bootstrap 样式
+$(function add_table_class() {
+    $('table').addClass('table table-condensed table-hover');
+});
