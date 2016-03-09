@@ -154,7 +154,7 @@ learn/tutorial 镜像基于 ubuntu，所以可以运行 `apt-get` 命令来安�
 容器停止后，对于容器的修改不会丢失  
 
 {% highlight sh %}
-#docker run learn/tutorial apt-get install -y ping
+$sudo docker run learn/tutorial apt-get install -y ping
 {% endhighlight %}
 
 默认情况下容器无法和命令行交互，因此需要使用 `-y` 参数确认安装程序。  
@@ -175,9 +175,9 @@ learn/tutorial 镜像基于 ubuntu，所以可以运行 `apt-get` 命令来安�
 直接使用原有的镜像名是无法看到对容器的修改的。  
 
 {% highlight sh %}
-#docker ps -l                       # 查看已有的容器 ID
-#docker commit 123abc learn/ping    # 指定 ID 号和新的名称即可
-#docker run learn/ping ping         # 查看运行效果
+$sudo docker ps -l                       # 查看已有的容器 ID
+$sudo docker commit 123abc learn/ping    # 指定 ID 号和新的名称即可
+$sudo docker run learn/ping ping         # 查看运行效果
 {% endhighlight %}
 
 **注意:**   
@@ -190,8 +190,8 @@ learn/tutorial 镜像基于 ubuntu，所以可以运行 `apt-get` 命令来安�
 然后使用 `inspect` 查看容器的详细信息。  
 
 {% highlight sh %}
-#docker ps
-#docker inspect 123abc
+$sudo docker ps
+$sudo docker inspect 123abc
 {% endhighlight %}
 
 ### 3.发布镜像
@@ -201,13 +201,13 @@ learn/tutorial 镜像基于 ubuntu，所以可以运行 `apt-get` 命令来安�
 只能将镜像发布到自己的账号名称之下，也就是镜像名中包含的用户名部分要与自己的一致。  
 
 {% highlight sh %}
-#docker images                       # 查看所有安装的镜像
-#docker commit 123abc besky/ping     # 利用 commit 重命名镜像
-#docker rmi IMAGEID                  # 删除已有镜像
-#docker rm  123abc                   # 如果删除镜像时显示被容器占用，可以先删除容器。
+$sudo docker images                       # 查看所有安装的镜像
+$sudo docker commit 123abc besky/ping     # 利用 commit 重命名镜像
+$sudo docker rmi IMAGEID                  # 删除已有镜像
+$sudo docker rm  123abc                   # 如果删除镜像时显示被容器占用，可以先删除容器。
 
-#docker login                        # 登陆远程仓库
-#docker push besky/ping              # 推送指定镜像
+$sudo docker login                        # 登陆远程仓库
+$sudo docker push besky/ping              # 推送指定镜像
 {% endhighlight %}
 
 ---
