@@ -138,16 +138,6 @@ nav a:hover {
 	transition: color .2s linear;
 }
 
-@font-face {
-    font-family: 'FZQKBYSJW';
-
-    src: url('../fonts/FZQKBYSJW.TTF');
-}
-@font-face {
-    font-family: 'FZSKBXKJW';
-
-    src: url('../fonts/FZSKBXKJW.TTF');
-}
 .post{padding:.5em 0em;}
 .post ul,ol {
     margin-left: 1em;
@@ -242,4 +232,16 @@ footer a:hover{border-bottom:1px dashed #BBB;text-decoration:none;}
     transition: color .2s linear;
 }
 
+@font-face {
+  font-family: 'FZSKBXKJW';
+  src: url('../fonts/FZSKBXKJW.eot');
+  src:
+    url('../fonts/FZSKBXKJW.eot?#font-spider') format('embedded-opentype'),
+    url('../fonts/FZSKBXKJW.woff2') format('woff2'),
+    url('../fonts/FZSKBXKJW.woff') format('woff'),
+    url('../fonts/FZSKBXKJW.ttf') format('truetype'),
+    url('../fonts/FZSKBXKJW.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 .letter{font-family:"FZSKBXKJW";font-size:1.3em;}

@@ -1,7 +1,7 @@
 markdown: kramdown
 permalink: /:year/:i_month/:title
 hightlighter: pygments
-duoshuo: beyondsky
+#duoshuo: beyondsky
 url: http://besky.me
 name: Beyondsky
 author: Beyondsky
