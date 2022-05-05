@@ -1,15 +1,11 @@
 markdown: kramdown
 permalink: /:year/:i_month/:title
 hightlighter: pygments
-#duoshuo: beyondsky
-url: http://besky.me
+url: http://blog.summery.tk
 name: Beyondsky
 author: Beyondsky
-qq: 1175646849
 email: sky_529@live.com
-weibo: 2174510607
-weibourl: beskyme
-about: "学生党，重度选择恐惧症/拖延症，，，喜欢折腾。。。"
+about: "喜欢折腾"
 github: beyondskyml
 
 gems: 
