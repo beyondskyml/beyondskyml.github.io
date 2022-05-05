@@ -5,8 +5,7 @@ comments: no
 
 ---
 
-coding / 跑步 / 宅 / 旅行 / 摄影 / 折腾...  
-重度选择恐惧症 / 拖延症...  
+coding / 跑步 / 宅 / 旅行 / 摄影 / 折腾 / 做饭...  
 
 ---
 
@@ -41,6 +40,3 @@ GitHub：[{{ site.github }}](http://github.com/beyondskyml)
 
 ---
 
-
-
-[![新浪微博](http://service.t.sina.com.cn/widget/qmd/{{ site.weibo }}/d643d182/7.png)](http://weibo.com/{{ site.weibourl }})
