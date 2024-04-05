@@ -8,11 +8,12 @@ email: sky_529@live.com
 about: "喜欢折腾"
 github: beyondskyml
 
-gems: 
- - jekyll-paginate
-
+plugins: [jekyll-paginate]
 paginate: 16 # 每页显示的文章列表长度
 paginate_path: "page:num"
+
+#gems: 
+# - jekyll-paginate
 # safe: true    # 如果使用该选项，则不会加载任何 include 的插件，比如 pagination
 # disqus: beyondsky
 # beian: 浙ICP备12026616号
