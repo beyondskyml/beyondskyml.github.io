@@ -138,6 +138,16 @@ nav a:hover {
 	transition: color .2s linear;
 }
 
+@font-face {
+    font-family: 'FZQKBYSJW';
+
+    src: url('../fonts/FZQKBYSJW.TTF');
+}
+@font-face {
+    font-family: 'FZSKBXKJW';
+
+    src: url('../fonts/FZSKBXKJW.TTF');
+}
 .post{padding:.5em 0em;}
 .post ul,ol {
     margin-left: 1em;
@@ -231,3 +241,5 @@ footer a:hover{border-bottom:1px dashed #BBB;text-decoration:none;}
     -o-transition: color .2s linear;
     transition: color .2s linear;
 }
+
+.letter{font-family:"FZSKBXKJW";font-size:1.3em;}
